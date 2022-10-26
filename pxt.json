@@ -1,19 +1,16 @@
 {
     "name": "cisla",
-    "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
         "microphone": "*"
     },
     "files": [
+        ".vscode/settings.json",
+        "README.md",
         "main.blocks",
         "main.ts",
-        "README.md",
-        null
-    ],
-    "testFiles": [
-        "test.ts"
+        "test.ts",
+        "tsconfig.json"
     ],
     "targetVersions": {
         "target": "5.0.12",

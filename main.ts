@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    if (Patro >= 1) {
+    if (Patro >= NejnizsiPatro + 1) {
         Patro += -1
         basic.showNumber(Patro)
     } else {
@@ -7,7 +7,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    if (Patro <= 8) {
+    if (Patro <= NejvyssiPatro - 1) {
         Patro += 1
         basic.showNumber(Patro)
     } else {
@@ -23,7 +23,11 @@ function Blikej () {
     }
 }
 let Patro = 0
+let NejvyssiPatro = 0
+let NejnizsiPatro = 0
 basic.showString("Vytah")
+NejnizsiPatro = 0
+NejvyssiPatro = 9
 Patro = 5
 basic.showNumber(Patro)
 basic.forever(function () {
