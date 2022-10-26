@@ -1,22 +1,31 @@
 input.onButtonPressed(Button.A, function () {
-    if (Cislo >= 1) {
-        Cislo += -1
-        basic.showNumber(Cislo)
+    if (Patro >= 1) {
+        Patro += -1
+        basic.showNumber(Patro)
     } else {
-    	
+        Blikej()
     }
 })
 input.onButtonPressed(Button.B, function () {
-    if (Cislo <= 8) {
-        Cislo += 1
-        basic.showNumber(Cislo)
+    if (Patro <= 8) {
+        Patro += 1
+        basic.showNumber(Patro)
     } else {
-    	
+        Blikej()
     }
 })
-let Cislo = 0
-Cislo = 5
-basic.showNumber(Cislo)
+function Blikej () {
+    for (let index = 0; index < 3; index++) {
+        basic.clearScreen()
+        basic.pause(300)
+        basic.showNumber(Patro)
+        basic.pause(200)
+    }
+}
+let Patro = 0
+basic.showString("Vytah")
+Patro = 5
+basic.showNumber(Patro)
 basic.forever(function () {
 	
 })
